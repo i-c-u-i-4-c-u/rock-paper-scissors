@@ -86,6 +86,7 @@ body {
 
 #selection-button {
     display: flex;
+    justify-content: space-between;
 }
 #selection-button button{
     border: none;
