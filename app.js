@@ -70,7 +70,17 @@ function reset(){
 //Play Round
 
 function playRound() {
-   
+    if (playerScores === 5) {
+        resultTag.textContent = "You win this round. Press a button to start new game.";
+        selectionButton.forEach((elem) => {
+            elem.addEventListener("click", reset())
+        })
+    } else if (compScore === 5 ){
+        resultTag.textContent = "Computer win this round. Press a button to start new game.";
+        selectionButton.forEach((elem) => {
+            elem.addEventListener("click", reset())
+        })
+    } else {
 
         round.textContent = `Round ${++roundCount}`;
     const computerSelection = getComputerChoice();
@@ -102,17 +112,15 @@ function playRound() {
             resultTag.textContent = `You win! ${playerSelection} beat ${computerSelection}`;
         }
     }
-console.log(playerScores)
-    if (playerScores === 5) {
-        resultTag.textContent = "You win this round. Press a button to start new game.";
-        selectionButton.forEach((elem) => {
-            elem.addEventListener("click", reset)
-        })
-    } else if (compScore === 5 ){
-        resultTag.textContent = "Computer win this round. Press a button to start new game.";
-        selectionButton.forEach((elem) => {
-            elem.addEventListener("click", reset)
-        })
-    }
-
 }
+if (playerScores === 5) {
+    resultTag.textContent = "You win this round. Press a button to start new game.";
+
+    }
+ else if (compScore === 5 ){
+    resultTag.textContent = "Computer win this round. Press a button to start new game.";
+    
+    }
+}
+   
+

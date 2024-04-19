@@ -15,8 +15,10 @@ body {
     border: #000 1px solid;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #645959;margin-top: 20px;
+    width: 400px;
+    height:500px ;
     max-height: 100vh;
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .main > * {
@@ -87,6 +89,7 @@ body {
 #selection-button {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 #selection-button button{
     border: none;
@@ -116,9 +119,10 @@ body {
 
 #result-tag {
     width:70%;
+    height: 70px;
     border: #000;
     background-color: #d9d1d1;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin-inline: auto;
     border-radius: 20px;
