@@ -71,12 +71,12 @@ function reset(){
 
 function playRound() {
     if (playerScores === 5) {
-        resultTag.textContent = "You win this round. Press a button to start new game.";
+        resultTag.textContent = "New Game, make your choice";
         selectionButton.forEach((elem) => {
             elem.addEventListener("click", reset())
         })
     } else if (compScore === 5 ){
-        resultTag.textContent = "Computer win this round. Press a button to start new game.";
+        resultTag.textContent = "New Game, make your choice";
         selectionButton.forEach((elem) => {
             elem.addEventListener("click", reset())
         })
